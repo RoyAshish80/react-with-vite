@@ -12,7 +12,10 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
     <>
       <h1>List</h1>
       {items.length === 0 && <p>No items found.</p>}
-      <ul className={[styles.ListGroup, styles.container].join(" ")}>
+      <ul
+        className={[styles.ListGroup, styles.container].join(" ")}
+        style={{ backgroundColor: "yellow" }}
+      >
         {items.map((item, index) => (
           <li
             className={
